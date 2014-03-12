@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* Regular */
+@font-face {
+    font-family: 'League Gothic Italic';
+    src: url('../font/league-gothic/webfonts/leaguegothic-italic-webfont.eot');
+    src: url('../font/league-gothic/webfonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/league-gothic/webfonts/leaguegothic-italic-webfont.woff') format('woff'),
+    url('../font/league-gothic/webfonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+    url('../font/league-gothic/webfonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../font/league-gothic/webfonts/leaguegothic-regular-webfont.eot');
+    src: url('../font/league-gothic/webfonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/league-gothic/webfonts/leaguegothic-regular-webfont.woff') format('woff'),
+    url('../font/league-gothic/webfonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+    url('../font/league-gothic/webfonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('../font/league-gothic/webfonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('../font/league-gothic/webfonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/league-gothic/webfonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+    url('../font/league-gothic/webfonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+    url('../font/league-gothic/webfonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed Italic';
+    src: url('../font/league-gothic/webfonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('../font/league-gothic/webfonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/league-gothic/webfonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+    url('../font/league-gothic/webfonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+    url('../font/league-gothic/webfonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Amarante';
+    src: url('../font/Amarante/Amarante-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../font/myriad-pro/MYRIADPRO-REGULAR.OTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    src: url('../font/myriad-pro/MYRIADPRO-COND.OTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Condensed Italic';
+    src: url('../font/myriad-pro/MYRIADPRO-CONDIT.OTF');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('../font/myriad-pro/MYRIADPRO-BOLD.OTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold Italic';
+    src: url('../font/myriad-pro/MYRIADPRO-BOLDIT.OTF');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold Condensed';
+    src: url('../font/myriad-pro/MYRIADPRO-BOLDCOND.OTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold Condensed Italic';
+    src: url('../font/myriad-pro/MYRIADPRO-BOLDCONDIT.OTF');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad Pro SemiBold';
+    src: url('../font/myriad-pro/MYRIADPRO-SEMIBOLD.OTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro SemiBold Italic';
+    src: url('../font/myriad-pro/MYRIADPRO-SEMIBOLDIT.OTF');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lusitana';
+    src: url('../font/Lusitana/Lusitana-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lusitana Bold';
+    src: url('../font/Lusitana/Lusitana-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Balthazar';
+    src: url('../font/Balthazar/Balthazar-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kameron';
+    src: url('../font/Kameron/Kameron-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kameron Bold';
+    src: url('../font/Kameron/Kameron-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuintEssential';
+    src: url('../font/Quintessential/Quintessential-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Mono';
+    src: url('../font/Ubuntu_Mono/UbuntuMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Mono Italic';
+    src: url('../font/Ubuntu_Mono/UbuntuMono-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu Mono Bold';
+    src: url('../font/Ubuntu_Mono/UbuntuMono-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Mono Bold Italic';
+    src: url('../font/Ubuntu_Mono/UbuntuMono-BoldItalic.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vidaloka';
+    src: url('../font/Vidaloka/Vidaloka-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AwlsCrawl';
+    src: url('../font/awlscrawl/AWLSCRAW.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Zorque';
+    src: url('../font/zorque/zorque.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Averen';
+    src: url('../font/AVEREN__.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Melly Boo';
+    src: url('../font/MEllybO0fONt.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Candal';
+    src: url('../font/Candal/Candal.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url('../font/Courgette/Courgette-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inika';
+    src: url('../font/Inika/Inika-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inika Bold';
+    src: url('../font/Inika/Inika-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lemon';
+    src: url('../font/Lemon/Lemon-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ultra';
+    src: url('../font/Ultra/Ultra.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Seymour One';
+    src: url('../font/Seymour_One/SeymourOne-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+

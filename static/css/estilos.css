@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import "fonts.css";
+
+.HeaderTitle {
+    font-family: "Averen";
+    font-size: 3.50rem;
+}
+
+.links {
+    font-family: "Courgette";
+    font-size: 1.25rem;
+    color: #fff0f5;
+    font-weight: bold;
+    text-shadow: 2px 1px 0 gray;
+}
+
+.links:hover{
+    color: #a9a9a9;
+    text-shadow: 2px 1px 0 white;
+}
+.navbar {
+    padding: 0.50rem 1rem;
+}
