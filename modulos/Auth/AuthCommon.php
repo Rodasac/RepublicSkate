@@ -8,7 +8,7 @@ interface AuthInterface {
 
     public function authenticated();
 
-    public function initSession($login, $password, $rememberMe);
+    public function initSession($login, $password);
 
     public function setTokenAuth($token_auth);
 
@@ -21,7 +21,7 @@ interface AuthInterface {
 class AuthResult {
     const FAILURE = 0;
     const SUCCESS = 1;
-    const SUCCESS_SUPERUSER_CODE = 22;
+    const SUCCESS_SUPERUSER_CODE = 1;
 
     protected $tokenAuth = null;
 
