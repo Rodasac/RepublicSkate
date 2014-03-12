@@ -9,10 +9,13 @@ session_start();
 $_SESSION['Anonymous'] = True;
 
 require_once __DIR__."/util/seguridad.php";
-include_once __DIR__."/modulos/DB/Model.php";
+include_once __DIR__."/Models/User/UserModel.php";
 
 $uri = $_SERVER['REQUEST_URI'];
 $rindex = '/\/SkateWeb\//';
+
+$model = new UserModel();
+$array2 = $model->create("'admin', '123456', 'Adolfo Abraham Bastardo Duran', 1");
 
 $session_general_verify = session_id();
 $session_SKey_verify = $_SESSION['SKey'];
