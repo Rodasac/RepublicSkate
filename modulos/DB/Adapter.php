@@ -53,10 +53,10 @@ class Adapter {
             return False;
         }
     }
-    protected function insert($table, $campo, $valores){
+    protected function insert($table, $campos, $valores){
         try {
-            $sentecia = self::$db->prepare("insert into $table
-                ($campo) values ($valores)");
+            $sentecia = self::$db->prepare("insert into $table ($campos)
+                values ($valores)");
 
             if($sentecia->execute()){
                 return True;
