@@ -3,17 +3,17 @@ require_once "Adapter.php";
 
 abstract class Model {
     public $objetos;
-    const TABLE = 'prueba';
+    protected $TABLE = 'prueba';
 
     public function __construct(){
         $this->objetos = new Adapter();
     }
     public function get($id=null){
         if(is_null($id)){
-            return $this->objetos->selectAll(Model::TABLE);
+            return $this->objetos->selectAll($this->TABLE);
         }
         else{
-            return $this->objetos->selectWhereID(Model::TABLE,"id",$id);
+            return $this->objetos->selectWhereID($this->TABLE,"id",$id);
         }
     }
     abstract public function create($datos_raw);

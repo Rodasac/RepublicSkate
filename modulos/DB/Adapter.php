@@ -11,6 +11,7 @@ class Adapter {
             array(PDO::ATTR_PERSISTENT => true, PDO::MYSQL_ATTR_INIT_COMMAND =>
                 'SET NAMES \'UTF8\'')
         );
+        self::$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     public function selectAll($table){
         try {
@@ -56,7 +57,7 @@ class Adapter {
     protected function insert($table, $campos, $valores){
         try {
             $sentecia = self::$db->prepare("insert into $table ($campos)
-                values ($valores)");
+                values ($valores)", array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
 
             if($sentecia->execute()){
                 return True;
@@ -66,13 +67,12 @@ class Adapter {
             }
         }
         catch (Exception $e){
-            self::$db->rollBack();
             return False;
         }
     }
-    protected function update($table, $columns, $modify, $id){
+    protected function updateOne($table, $modify, $id){
         try {
-            $sentecia = self::$db->prepare("UPDATE $table SET $columns = $modify
+            $sentecia = self::$db->prepare("UPDATE $table SET $modify
                 WHERE id = $id");
             if($sentecia->execute()){
                 return True;
@@ -82,7 +82,6 @@ class Adapter {
             }
         }
         catch (Exception $e){
-            self::$db->rollBack();
             return False;
         }
     }
@@ -98,8 +97,7 @@ class Adapter {
             return False;
         }
     }
-    public function save($table, $campos, $valores_raw = null){
-        $valores = self::$db->quote($valores_raw);
+    public function save($table, $campos, $valores){
         if($this->insert($table, $campos, $valores)){
             return True;
         }
@@ -107,9 +105,8 @@ class Adapter {
             return False;
         }
     }
-    public function modify($table, $columns, $datos, $id){
-        $modify = self::$db->quote($datos);
-        if($this->update($table, $columns, $modify, $id)){
+    public function modifyOne($table, $modify, $id){
+        if($this->updateOne($table, $modify, $id)){
             return True;
         }
         else {
