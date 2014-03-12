@@ -5,7 +5,7 @@
         <?php require_once "header.php" ?>
         <section>
             <article>
-                <p><?php print_r($var1)?></p>
+                <p><?php print_r($array2)?></p>
             </article>
         </section>
         <?php require_once "scripts.php" ?>
