@@ -17,7 +17,7 @@
 <header class="panel">
     <div class="row">
         <div class="large-12 columns">
-            <h1 class="HeaderTitle subheader">SkateWeb
+            <h1 class="HeaderTitle subheader">Republic Skate S.R.L.
                 <small>- Tienda Online</small></h1>
         </div>
     </div>

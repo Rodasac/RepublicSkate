@@ -14,7 +14,8 @@ include_once __DIR__."/Models/User/UserModel.php";
 include_once __DIR__."/Models/Producto/ProductoModel.php";
 
 $uri = $_SERVER['REQUEST_URI'];
-$rindex = '/\/SkateWeb\//';
+$rindex = '/\//';
+$rlogin = '/\/login\//';
 
 
 $session_general_verify = session_id();
