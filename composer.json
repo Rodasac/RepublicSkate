@@ -1,0 +1,16 @@
+{
+    "name": "Modules",
+    "minimum-stability": "stable",
+    "require": {
+        "cartalyst/sentry": "2.0.*",
+        "illuminate/database": "4.0.*",
+        "ircmaxell/password-compat": "1.0.*",
+        "doctrine/orm": "*",
+        "symfony/yaml": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "src\\": "src/"
+        }
+    }
+}

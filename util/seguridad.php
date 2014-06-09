@@ -7,9 +7,3 @@ header("Cache-Control: no-store, no-cache, must-revalidate");
 header("Cache-Control: post-check=0, pre-check=0", false);
 header("Pragma: no-cache");
 header('Content-type: text/html');
-$cstrong = TRUE;
-
-$_SESSION['userAgent'] = $_SERVER['HTTP_USER_AGENT'];
-$_SESSION['SKey'] = openssl_random_pseudo_bytes(35, $cstrong);
-$_SESSION['IPaddress'] = $_SERVER['REMOTE_ADDR'];
-$_SESSION['LastActivity'] = $_SERVER['REQUEST_TIME'];

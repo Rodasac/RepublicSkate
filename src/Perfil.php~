@@ -1,0 +1,25 @@
+<?php
+// src/Perfil.php
+use Doctrine\ORM\EntityRepository;
+/**
+ * @Entity @Table(name="perfil")
+ **/
+class Perfil {
+    /**
+     * @Id @Column(type="integer")
+     * @GeneratedValue
+     */
+    private $id;
+    /**
+     * @Column(type="integer", unique=true)
+     */
+    private $user_id;
+    /**
+     * @Column(type="integer", unique=true)
+     */
+    private $ci;
+    /**
+     * @Column(type="string")
+     */
+    private $rif;
+} 

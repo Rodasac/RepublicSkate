@@ -34,6 +34,7 @@ DirectoryIndex index.php
 
     # If the requested filename exists, simply serve it.
     # We only want to let Apache serve files and not directories.
+    RewriteRule ^(static|Piwik|uploads)($|/) - [L]
     RewriteCond %{REQUEST_FILENAME} -f
     RewriteRule .? - [L]
 

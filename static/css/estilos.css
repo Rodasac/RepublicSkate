@@ -1,23 +1,103 @@
 @charset "UTF-8";
-@import "fonts.css";
 
-.HeaderTitle {
-    font-family: "Averen";
-    font-size: 3.50rem;
+body {
+    background-image: url("../img/480631708_3d8b4106cf_o.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 100%;
 }
 
-.links {
-    font-family: "Courgette";
-    font-size: 1.25rem;
-    color: #fff0f5;
+footer, div, em, strong, a, p, span, label, h2, h3, h4, h5, h6 {
+    font-family: "Myriad Pro" !important;
+}
+
+p, span, label {
+    font-size: 1.2rem;
+}
+
+.left .car {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding: 0.45rem;
+}
+
+.has-dropdown a {
+    font-size: 1rem;
+}
+
+.labelG {
+    font-size: 1.5rem !important;
     font-weight: bold;
-    text-shadow: 2px 1px 0 gray;
+}
+
+.HeaderTitle {
+    text-shadow: red 4px 3px;
+    text-transform: capitalize;
+    font-family: "Averen";
+    font-size: 4rem;
+    font-weight: bold;
+}
+.HeaderTitle .smallHead {
+    text-shadow: #7cfc00 4px 3px;
+}
+
+.links, .linksNav {
+    font-family: "Myriad Pro" !important;
+    font-size: 1.25rem !important;
+    color: #f0f8ff !important;
+    font-weight: bold !important;
+    text-shadow: 2px 1px 0 red;
+}
+
+.linksNav {
+    font-size: 1.40rem !important;
 }
 
 .links:hover{
-    color: #a9a9a9;
-    text-shadow: 2px 1px 0 white;
+    color: #90ee90;
+    text-shadow: 2px 1px 0 yellow;
 }
 .navbar {
     padding: 0.50rem 1rem;
+}
+
+.Titles {
+    font-family: "Myriad Pro Bold" !important;
+    font-weight: bold;
+}
+
+.Titles a {
+    font-size: 1.8rem !important;
+}
+
+
+.backgd {
+    background-color: rgba(193, 238, 161, 0.80);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: 100%;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.radioBorde {
+    border: 1rem !important;
+    border-radius: 1.4rem;
+}
+.radioBordeSec {
+    border: 0.5rem !important;
+    border-radius: 1rem;
+}
+.footer {
+    background-color:#000000;
+    bottom: -1px;
+    margin-bottom: -10px;
+    width: 100%;
+    min-height:147px;
+    padding-bottom: 5px;
+}
+.footer h3 {
+    color: #fff !important;
+}
+.drop2 {
+    width: 12rem !important;
 }
